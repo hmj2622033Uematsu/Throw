@@ -131,7 +131,7 @@ GameObject:
   - component: {fileID: 60479641}
   - component: {fileID: 60479640}
   m_Layer: 5
-  m_Name: money
+  m_Name: muscle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -392,9 +392,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   player: {fileID: 857608122}
   ball: {fileID: 857608122}
+  ballController: {fileID: 857608120}
   distanceUI: {fileID: 857608120}
   result: {fileID: 1557358806}
-  moneyResylt: {fileID: 60479639}
+  muscleResylt: {fileID: 60479639}
+  totalMuscle: {fileID: 857608120}
+  playerController: {fileID: 857608120}
 --- !u!4 &377397392
 Transform:
   m_ObjectHideFlags: 0
@@ -1178,7 +1181,7 @@ GameObject:
   - component: {fileID: 1989844903}
   - component: {fileID: 1989844902}
   m_Layer: 5
-  m_Name: moneyText
+  m_Name: muscleText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1223,7 +1226,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: money
+  m_text: 'muscle
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d631c7700c2c7114d954460591a25e02, type: 2}
   m_sharedMaterial: {fileID: -7044949368377351903, guid: d631c7700c2c7114d954460591a25e02, type: 2}

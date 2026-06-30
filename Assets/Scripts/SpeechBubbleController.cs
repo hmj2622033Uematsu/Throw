@@ -1,18 +1,20 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
-public class ShopManager : MonoBehaviour
+public class SpeechBubbleController : MonoBehaviour
 {
-    [SerializeField] GameObject BallController;
-    [SerializeField] GameObject GameManager;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        GameManager.GetComponent<GameManager>().moneyManager();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (Keyboard.current.enterKey.wasPressedThisFrame)
+        {
+            Destroy(gameObject);
+        }
     }
 }
